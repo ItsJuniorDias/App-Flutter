@@ -9,6 +9,15 @@ class App extends StatelessWidget {
     
     var texto = Text("Hello World!");
 
-    return MaterialApp(home: texto);
+    var centro = Center(child: texto,);
+
+    var appBar = AppBar(title: Text("App"));
+ 
+    var scaffold = Scaffold(
+      appBar: appBar,
+      body: centro,
+      );
+
+    return MaterialApp(home: scaffold);
    }
 }
