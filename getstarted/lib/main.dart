@@ -4,6 +4,8 @@ void main() => runApp(new App());
 
 
 class App extends StatelessWidget {
+   int contador = 0; 
+
    @override
    Widget build(BuildContext context) {
      return MaterialApp(
@@ -13,12 +15,29 @@ class App extends StatelessWidget {
            title: Text("App")
          ),
         body: Center(
-          child: Text("Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World",
-           maxLines: 1,
-           overflow: TextOverflow.ellipsis,
-          )
+          child: MeuTexto("Fatec"),
+          
+          
         ),
        )
      );
    }
+}
+
+class MeuTexto extends StatelessWidget{
+  String texto;
+
+  MeuTexto(this.texto);
+   
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Text(
+     this.texto,
+     style: TextStyle(
+            fontSize: 30
+          ),
+    );
+  }
+
 }
