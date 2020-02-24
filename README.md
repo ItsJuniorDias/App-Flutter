@@ -14,3 +14,11 @@ This project is part of my portfolio, so, I'll be happy if you could provide me 
 Email-me: juniordias_@live.com;
 
 Connect with me at [LinkedIn](https://www.linkedin.com/in/alexandre-junior-236894190/).
+
+**Cloning the Repository**
+
+```
+$ git clone https://github.com/ItsJuniorDias/App-Flutter
+
+$ cd App-Flutter
+```
