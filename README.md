@@ -25,9 +25,7 @@ $ cd App-Flutter
 
 ### Flutter 
 
-[![Build Status - Cirrus][]][Build status]
-[![Gitter Channel][]][Gitter badge]
-[![Twitter handle][]][Twitter badge]
+
 
 Flutter is Google's SDK for crafting beautiful, fast user experiences for
 mobile, web and desktop from a single codebase. Flutter works with existing
