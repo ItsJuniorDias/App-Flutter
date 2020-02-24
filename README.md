@@ -22,3 +22,21 @@ $ git clone https://github.com/ItsJuniorDias/App-Flutter
 
 $ cd App-Flutter
 ```
+
+# [![Flutter logo][]][flutter.dev]
+
+[![Build Status - Cirrus][]][Build status]
+[![Gitter Channel][]][Gitter badge]
+[![Twitter handle][]][Twitter badge]
+
+Flutter is Google's SDK for crafting beautiful, fast user experiences for
+mobile, web and desktop from a single codebase. Flutter works with existing
+code, is used by developers and organizations around the world, and is free
+and open source.
+
+## Documentation
+
+* [Install Flutter](https://flutter.dev/get-started/)
+* [Flutter documentation](https://flutter.dev/docs)
+* [Development wiki](https://github.com/flutter/flutter/wiki)
+* [Contributing to Flutter](https://github.com/flutter/flutter/blob/master/CONTRIBUTING.md)
