@@ -23,7 +23,7 @@ $ git clone https://github.com/ItsJuniorDias/App-Flutter
 $ cd App-Flutter
 ```
 
-# [![Flutter logo][]][flutter.dev]
+### Flutter 
 
 [![Build Status - Cirrus][]][Build status]
 [![Gitter Channel][]][Gitter badge]
