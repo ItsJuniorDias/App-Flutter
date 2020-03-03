@@ -1,43 +1,24 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new App()); 
+void main() => runApp(ContatoApp());
 
+class ContatoApp extends StatelessWidget {
 
-class App extends StatelessWidget {
-   int contador = 0; 
-
-   @override
+  @override
    Widget build(BuildContext context) {
      return MaterialApp(
        home: Scaffold(
-         appBar: AppBar(
-           backgroundColor: Colors.green,
-           title: Text("App")
+         appBar: AppBar(),
+         body: Container(
+           child: Row(
+             mainAxisAlignment: MainAxisAlignment.center,
+             children: [
+               Text("A"),
+               Text("B"),
+             ],
+           ),
          ),
-        body: Center(
-          child: MeuTexto("Fatec"),
-          
-          
-        ),
-       )
+       ) 
      );
-   }
-}
-
-class MeuTexto extends StatelessWidget{
-  String texto;
-
-  MeuTexto(this.texto);
-   
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Text(
-     this.texto,
-     style: TextStyle(
-            fontSize: 30
-          ),
-    );
-  }
-
+   } 
 }
