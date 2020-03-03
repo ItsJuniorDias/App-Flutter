@@ -10,11 +10,24 @@ class ContatoApp extends StatelessWidget {
        home: Scaffold(
          appBar: AppBar(),
          body: Container(
+           margin: EdgeInsets.fromLTRB(10, 10,10,10),
            child: Row(
-             mainAxisAlignment: MainAxisAlignment.center,
+             crossAxisAlignment: CrossAxisAlignment.start,
              children: [
-               Text("A"),
-               Text("B"),
+               Container(
+                width: 54,
+                height: 54,
+                child: CircleAvatar(
+                  backgroundImage: NetworkImage("https://avatars1.githubusercontent.com/u/50254416?s=460&v=4"),
+                )
+               ),
+           
+               Column(
+                 children: [
+                   Text("Nome"),
+                   Text("Email")
+                 ],
+               )
              ],
            ),
          ),
