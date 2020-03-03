@@ -8,30 +8,61 @@ class ContatoApp extends StatelessWidget {
    Widget build(BuildContext context) {
      return MaterialApp(
        home: Scaffold(
-         appBar: AppBar(),
-         body: Container(
-           margin: EdgeInsets.fromLTRB(10, 10,10,10),
-           child: Row(
-             crossAxisAlignment: CrossAxisAlignment.start,
-             children: [
-               Container(
-                width: 54,
-                height: 54,
-                child: CircleAvatar(
-                  backgroundImage: NetworkImage("https://avatars1.githubusercontent.com/u/50254416?s=460&v=4"),
-                )
-               ),
-           
-               Column(
-                 children: [
-                   Text("Nome"),
-                   Text("Email")
-                 ],
-               )
-             ],
-           ),
+         appBar: AppBar(
+           title: Center(
+             child: Text("Numeros")
+             )
+            ),
+             body: ListView(
+           scrollDirection: Axis.vertical,    
+           children: [
+             ItemContato("Alexandre", "juniordias_live"),
+          
+           ],
          ),
        ) 
      );
    } 
+}
+
+class ItemContato extends StatelessWidget {
+
+  final String nome;
+  final String email;
+
+  ItemContato(this.nome, this.email);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.fromLTRB(10, 10,10,10),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+           width: 54,
+           height: 54,
+           margin: EdgeInsets.only(right: 10),
+           child: CircleAvatar(
+             backgroundImage: NetworkImage("https://avatars1.githubusercontent.com/u/50254416?s=460&v=4"),
+           )
+          ),
+      
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(nome,
+                style: TextStyle(color: Color.fromRGBO(255, 2, 1, .6) )
+              ),
+              SizedBox(height: 10,),
+              Text(email,
+               style: TextStyle(
+                 fontWeight: FontWeight.bold
+               ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
 }
