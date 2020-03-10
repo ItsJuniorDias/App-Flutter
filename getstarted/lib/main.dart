@@ -34,12 +34,18 @@ class ItemContato extends StatelessWidget {
 
   ItemContato(this.nome, this.email);
 
+  BuildContext _context;
+
   void openDetails() {
-    MaterialPageRoute(builder: (BuildContext context) => DetailsPage());
+    var routesDetails = MaterialPageRoute(builder: (BuildContext context) => DetailsPage());
+    Navigator.push(_context,routesDetails);
   }
 
   @override
   Widget build(BuildContext context) {
+
+    _context = context;
+    
     return GestureDetector(
         onTap: openDetails,
         child: Container(
