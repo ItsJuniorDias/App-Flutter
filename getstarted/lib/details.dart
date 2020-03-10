@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
+
+  final String nome;
+  final String email;
+
+  DetailsPage(this.nome, this.email);
    @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -14,13 +19,13 @@ class DetailsPage extends StatelessWidget {
           Image.network('https://avatars1.githubusercontent.com/u/50254416?s=460&v=4'),
           Container(
             margin: EdgeInsets.fromLTRB(10, 8, 10,0),
-            child: Text('Alexandre',
+            child: Text(nome,
             style: TextStyle(fontWeight: FontWeight.bold), 
             ),
           ),
           Container(
           margin: EdgeInsets.fromLTRB(10, 8, 10, 8),
-          child: Text('juniordias_@live.com', 
+          child: Text(email, 
           style: TextStyle(color: Colors.grey)
           )
           ),

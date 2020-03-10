@@ -18,7 +18,8 @@ class ContatoApp extends StatelessWidget {
              body: ListView(
            scrollDirection: Axis.vertical,    
            children: [
-             ItemContato("Alexandre", "juniordias_live"),
+             ItemContato("Alexandre", "juniordias_@live.com"),
+             ItemContato("Pedro", "pedro_@live.com"),
           
            ],
          ),
@@ -37,7 +38,7 @@ class ItemContato extends StatelessWidget {
   BuildContext _context;
 
   void openDetails() {
-    var routesDetails = MaterialPageRoute(builder: (BuildContext context) => DetailsPage());
+    var routesDetails = MaterialPageRoute(builder: (BuildContext context) => DetailsPage(nome, email));
     Navigator.push(_context,routesDetails);
   }
 
@@ -45,7 +46,7 @@ class ItemContato extends StatelessWidget {
   Widget build(BuildContext context) {
 
     _context = context;
-    
+
     return GestureDetector(
         onTap: openDetails,
         child: Container(
@@ -66,7 +67,7 @@ class ItemContato extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 30, 0),
+                  margin: EdgeInsets.fromLTRB(0, 0,70, 0),
                   child: Text(nome,
                     style: TextStyle(color: Color.fromRGBO(255, 2, 1, .6) )
                   ),
