@@ -9,18 +9,24 @@ class DetailsPage extends StatelessWidget {
         title: Text('Details')
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.network('https://avatars1.githubusercontent.com/u/50254416?s=460&v=4'),
           Text('Alexandre'),
           Text('juniordias_@live.com'),
           Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Column(
                 children: [
                   Icon(Icons.mail),
-                  Text('Enviar')
+                  Text('Send')
                 ],
               ),
+              Column(children: [
+                Icon(Icons.block),
+                Text('Block')
+              ],)
             ],
            )
         ],
