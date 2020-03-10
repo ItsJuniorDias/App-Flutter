@@ -1,3 +1,4 @@
+import 'package:getstarted/details.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(ContatoApp());
@@ -7,20 +8,7 @@ class ContatoApp extends StatelessWidget {
   @override
    Widget build(BuildContext context) {
      return MaterialApp(
-       home: Scaffold(
-         appBar: AppBar(
-           title: Center(
-             child: Text("Numeros")
-             )
-            ),
-             body: ListView(
-           scrollDirection: Axis.vertical,    
-           children: [
-             ItemContato("Alexandre", "juniordias_live"),
-          
-           ],
-         ),
-       ) 
+       home: DetailsPage(), 
      );
    } 
 }
