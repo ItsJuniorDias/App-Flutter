@@ -15,7 +15,8 @@ class DetailsPage extends StatelessWidget {
           Text('Alexandre'),
           Text('juniordias_@live.com'),
           Row(
-            mainAxisSize: MainAxisSize.min,
+            // mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
@@ -30,7 +31,9 @@ class DetailsPage extends StatelessWidget {
             ],
            )
         ],
-        )
+        ),
+        endDrawer: Drawer(),
+        floatingActionButton: FloatingActionButton(),
       );
   }
 }
