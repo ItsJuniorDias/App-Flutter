@@ -10,14 +10,20 @@ class DetailsPage extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-           SizedBox(width: 8,),
+        children: [ 
           Image.network('https://avatars1.githubusercontent.com/u/50254416?s=460&v=4'),
-          Text('Alexandre',
-          style: TextStyle(fontWeight: FontWeight.bold), 
-           
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 8, 10,0),
+            child: Text('Alexandre',
+            style: TextStyle(fontWeight: FontWeight.bold), 
+            ),
           ),
-          Text('juniordias_@live.com', style: TextStyle(color: Colors.grey)),
+          Container(
+          margin: EdgeInsets.fromLTRB(10, 8, 10, 8),
+          child: Text('juniordias_@live.com', 
+          style: TextStyle(color: Colors.grey)
+          )
+          ),
           Row(
             // mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
