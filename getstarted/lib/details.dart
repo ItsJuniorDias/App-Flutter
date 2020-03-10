@@ -11,9 +11,13 @@ class DetailsPage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+           SizedBox(width: 8,),
           Image.network('https://avatars1.githubusercontent.com/u/50254416?s=460&v=4'),
-          Text('Alexandre'),
-          Text('juniordias_@live.com'),
+          Text('Alexandre',
+          style: TextStyle(fontWeight: FontWeight.bold), 
+           
+          ),
+          Text('juniordias_@live.com', style: TextStyle(color: Colors.grey)),
           Row(
             // mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
